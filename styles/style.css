@@ -9,7 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   position: relative;
   /* to make things appear in front of other blocks on smaller screens? */
-  flex-direction: column;
 }
 
 .header {
@@ -23,8 +22,7 @@
 }
 
 .logo {
-  position: absolute;
-  background-repeat: no-repeat;
+ 
 }
 
 .logo_place_header {
@@ -33,23 +31,30 @@
   left: 64px;
   width: 154px;
   height: 31px;
+  position: absolute;
 }
 
 .header__title {
-  margin: auto 64px;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 64px;
+  margin-right: 0;
 }
 
 .header__subtitle {
   display: flex;
   flex-direction: column;
   position: absolute;
+  width: 388px;
   left: 64px;
   bottom: 30px;
-  width: 388px;
+
+  margin: 0;
 }
 
 .header__subtitle-text {
@@ -64,15 +69,11 @@
 }
 
 .header__main-illustration {
-  display: flex;
   width: 765px;
-  height: 608;
+  height: 608px;
   position: absolute;
-    bottom: 0px;
-    right: 0px;
-  background-image: url(./images/header-image.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  bottom: 0px;
+  right: 0px;
   z-index: 2;
 }
 
@@ -82,14 +83,15 @@
   width: 568px;
   background-color: #2f80ed;
   position: absolute;
-    margin-top: 64px;
-    right: 0px;
+  top: 64px;
+  right: 0px;
   z-index: 1;
 }
 
 .description {
   display: flex;
   justify-content: center;
+  margin: 100px auto;
 }
 
 .two-columns {
@@ -97,7 +99,6 @@
   width: 80%;
   position: relative;
   justify-content: space-between;
-  margin: 100px auto;
 }
 
 .two-columns__brief {
@@ -106,6 +107,7 @@
   font-weight: normal;
   color: #2f80ed;
   width: 175px;
+  margin: 0px;
 }
 
 .two-columns__main-text {
@@ -113,17 +115,25 @@
   flex-direction: column;
   min-width: 784px;
   width: 80%;
-  margin-bottom: 10px;
+  margin: 0px;
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0px;
+}
+
+.two-columns__paragraph:first-child {
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  margin-top: 30px;
 }
 
 .two-columns__span-accent {
-  line-height: 34px;
   font-weight: bold;
 }
 
@@ -135,7 +145,7 @@
   align-items: center;
 }
 
-.digits__title {
+.section-title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -143,9 +153,10 @@
   justify-content: center;
   width: 60%;
   margin: 100px auto 20px;
+  text-align: center;
 }
 
-.digits__subtitle {
+.section-subtitle {
   line-height: 34px;
   font-size: 24px;
   width: 60%;
@@ -156,7 +167,7 @@
   margin: 20px auto 0;
 }
 
-.digits__table {
+.table {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -165,54 +176,50 @@
   align-items: flex-start;
   margin: 0px auto 100px;
   justify-content: space-between;
+  padding-left: 0px;
 }
 
-.digits__cell {
+.table__cell {
   width: 250px;
   height: 100%;
   margin-top: 60px;
 }
-.digits__heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
-.digits__text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.break {
-  color: #f2f2f2;
-  height: 0;
-  flex-basis: 100%;
-}
-
 .feynman {
-display: flex;
-flex-direction: column;
-height: 790px;
-position: relative;
-background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 790px;
+  position: relative;
+  background-color: #f2f2f2;
+  padding-top: 100px;
 }
 
 .feynman__title {
-width: 775px;
-line-height: 1.15;
-font-size: 120px;
-font-weight: bold;
-margin: 100px auto 70px;
-text-align: center;
-z-index: 2;
+  max-width: 775px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0px auto 70px;
+  text-align: center;
+  z-index: 2;
 }
 
 .feynman__subtitle {
 line-height: 51px;
 font-size: 36px;
 font-weight: normal;
-margin: 70px auto;
+margin: 0px auto;
 z-index: 2;
 }
 
@@ -244,33 +251,16 @@ background-color: #1f1f1f;
 z-index: 1;
 }
 
-.kaufman__title {
-line-height: 1.15;
-font-size: 60px;
-font-weight: bold;
-width: 60%;
-text-align: center;
+.section-title_dark {
+color: white;
 margin: 90px auto 20px;
 }
 
-.kaufman__title_dark {
-color: #f2f2f2;
+.section-subtitle_dark {
+  color: white;
 }
 
-.kaufman__subtitle {
-line-height: 34px;
-font-size: 24px;
-font-weight: normal;
-width: 60%;
-text-align: center;
-margin: 20px auto 0px;
-}
-
-.kaufman__subtitle_dark {
-  color: #f2f2f2;
-}
-
-.kaufman__table {
+.table {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -283,11 +273,11 @@ margin: 20px auto 0px;
   z-index: 3;
 }
 
-.kaufman__table_dark {
+.table_dark {
   color: #f2f2f2;
 }
 
-.kaufman__table_cell {
+.table__cell {
   display: table;
   width: 200px;
   flex-grow: 1;
@@ -295,38 +285,43 @@ margin: 20px auto 0px;
   align-items: center;
 }
 
-.kaufman__table_cell_dark {
+.table__cell_dark {
   color: #f2f2f2;
 }
 
-.kaufman__table_heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.kaufman__table_heading_dark {
+.table__heading_dark {
   color: #f2f2f2;
 }
 
-.kaufman__table_text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
-.kaufman__table_text_dark {
+.table__text_dark {
   color: #f2f2f2;
 }
 
 .kaufman__triangle {
+  background-image: url("/Users/jacobjensen/Desktop//web_project_1/images/kaufman-triangle.svg");
   width: 877px;
   height: 877px;
-  z-index: -1;
+  z-index: 2;
   position: absolute;
   right: -210px;
+  top: auto;
+  background-repeat: no-repeat;
+  display: block;
+
 }
 
 .footer {
@@ -339,7 +334,7 @@ margin: 20px auto 0px;
 .footer__columns {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 90%;
   margin: 60px auto 40px;
 }
@@ -349,16 +344,16 @@ margin: 20px auto 0px;
   justify-content: flex-end;
 }
 
-.footer__column_copyright {
+.footer__column_content_copyright {
   position: relative;
 }
 
-.footer__column_info {
+.footer__column_content_info {
   flex-basis: auto;
 
 }
 
-.footer__column_social {
+.footer__column_content_social {
   flex-basis: auto;
 }
 
@@ -385,6 +380,7 @@ margin: 20px auto 0px;
   font-weight: bold;
   color: white;
   padding-inline: 0px;
+  margin: 0px;
 }
 
 .footer__column-links {
@@ -397,10 +393,17 @@ font-weight: normal;
 margin: 20px 0px 16px 0px;
 flex-basis: auto;
 justify-content: flex-end;
+padding-left: 0px;
+}
+
+.footer__column-links_content_page {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  height: 10px;
 }
 
 .footer__social-icon {
-  
   display: inline;
   width: 16px;
   height: 16px;
