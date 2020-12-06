@@ -321,13 +321,7 @@
   height: 35px; 
   color: white; 
   position: relative; 
-
   margin-bottom: auto; 
-This works! Another good way to reach this effect is setting justify-content: space-between; for footer__column_content_copyright
-NEEDS IMPROVEMENT
-Mark as completed
-Marina Lukianova
-reviewer 
 } 
  
 .footer__author { 
