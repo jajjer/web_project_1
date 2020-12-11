@@ -1,0 +1,13 @@
+.footer__column-pages {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer__column-pages:hover {
+    opacity: 0.5;
+  }
+
+  .footer__column-pages {
+    transition: opacity 0.4s ease-in;
+  }
