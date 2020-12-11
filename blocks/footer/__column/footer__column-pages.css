@@ -2,12 +2,9 @@
     list-style: none;
     color: white;
     text-decoration: none;
+    transition: opacity 0.4s ease-in;
   }
 
   .footer__column-pages:hover {
     opacity: 0.5;
-  }
-
-  .footer__column-pages {
-    transition: opacity 0.4s ease-in;
   }
