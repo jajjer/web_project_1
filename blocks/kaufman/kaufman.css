@@ -1,4 +1,7 @@
 @import url(../kaufman/__triange/kaufman__triangle.css);
+@import url(../table/table.css);
+@import url(../section-subtitle/section-subtitle.css);
+@import url(../section-title/section-title.css);
 
 
 .kaufman {
@@ -8,4 +11,5 @@
     position: relative;
     background-color: #1f1f1f;
     z-index: 1;
+    margin-top: 90px;
   }

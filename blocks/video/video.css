@@ -1,5 +1,6 @@
+@import url(./__iframe/video__iframe.css);
+
 .video {
     display: flex;
-    flex-direction: column;
-    justify-items: center;
+    position: relative;
 }
