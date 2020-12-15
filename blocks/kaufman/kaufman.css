@@ -1,8 +1,4 @@
 @import url(../kaufman/__triange/kaufman__triangle.css);
-@import url(../table/table.css);
-@import url(../section-subtitle/section-subtitle.css);
-@import url(../section-title/section-title.css);
-
 
 .kaufman {
     overflow: hidden;

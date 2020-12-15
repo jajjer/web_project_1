@@ -1,6 +1,8 @@
 .video__iframe {
-    display: block;
-    justify-content: center;
-    margin: 50px auto;
-    width: 1050px;
+    /*position: absolute;*/
+    margin: 0px;
+}
+
+.video__iframe:first-child {
+    margin-right: 20px;
 }
