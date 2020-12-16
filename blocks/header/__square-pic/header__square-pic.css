@@ -7,5 +7,4 @@
     right: 0px;
     z-index: 1;
     transform: rotate(345deg);
-    animation: rotation 20s ease-in-out 0s infinite normal forwards running;
   }
