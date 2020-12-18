@@ -1,11 +1,11 @@
-.header__square-pic {
+/*.header__square-pic {
   animation: rotation 20s linear 0s infinite normal forwards running;
 }
 
 .kaufman__triangle {
   animation: rotation 20s linear 0s infinite normal forwards running;
 }
-
+*/
   @keyframes rotation {
     from {
       transform: rotate(0deg);
