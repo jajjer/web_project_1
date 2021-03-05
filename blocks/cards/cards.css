@@ -1,8 +1,7 @@
 @import url(./__item/cards__item.css);
 @import url(./__image/cards__image.css);
-@import url(./__title/cards__title.css);
+@import url(../cards/__title/cards__title.css);
 @import url(./__description/cards__description.css);
-
 .cards {
     display: flex;
     list-style: none;
@@ -12,4 +11,4 @@
     padding-left: 0px;
     width: 920px;
     margin: 0 auto;
-  }
+}
